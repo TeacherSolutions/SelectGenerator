@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Tables for months</title>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      Inside the Computational Thinking Resource
+    </div>
+    <div class="panel-body">
+      <p><strong>Choose a section:</strong></p>
+      <select class="form-control" id="input">
+        <option value="This section contains a &lsquo;How to use this resource' guide, a video introduction, an explanation of the importance of digital technologies and computational thinking for all students, information about where computational thinking and digital technologies are found in the Australian Curriculum and a handy computational thinking infographic. A great place to get started and understand the big picture.">Introducing this Resource</option>
+        <option value="The computational thinking focus materials include lesson plans for years F-2, 3-4 and 5-6(7 for South Australia). Lessons are of varying length, from short term foci to ideas that might be extended over a week or longer, depending on the degree of elaboration you choose to follow. Some are digital focussed, but most are embedded across other learning areas and include the use of digital technology.">Computational Thinking Focus</option>
+        <option value="Computational thinking can be taught across the curriculum, in every learning area. This section provides explicit links between computational thinking and other learning areas. Examples are organised in years F-2, 3-4 and 5-6(7). This section supports you to either highlight the use of computational thinking or to explicitly teach it, while working in these other learning areas.">Computational Thinking Integrated</option>
+        <option value="In this section, you&rsquo;ll find resources to link your current personal, school or district priorities to computational thinking. Are you working with problem solving, creativity, Blooms Taxonomy, growth mindset or another framework? There are resources here to support the links between these frameworks, concepts and processes and computational thinking. Digital tools are also recommended.">Transforming Tasks</option>
+        <option value="Here you'll find a range of useful graphic organisers. Graphic organisers are fabulous ways to support students to think computationally, and these have been selected for their relevance to elements of computational thinking. They are sorted into a proposed continuum F to Yr 7 for schools that commit to explicit teaching of these skills, but are not necessarily only useful in the age group they are listed against.">Organising Computational Thinking</option>
+        <option value="The resources in this section are based on Formative Assessment or Assessment for Learning. You will find a range of formative assessment strategies to use with the lesson plans provided or in your own planning. There is a computational thinking skills progression, a reference for building your own rubrics and tracking student development. Masters of single column rubrics and examples for years F-2, 3-4 and 5-6(7) are also provided.">Assessing Computational Thinking</option>
+        <option value="This section contains a Glossary of all the terms used regularly when talking about computational thinking and digital technologies. There are also links to a range of other digital resources that you may wish to access and links to the other support processes we offer, especially the &lsquo;Demystifying Computational Thinking&rsquo; Facebook group where there will be an ongoing sharing of new resources and Pinterest where you&rsquo;ll find the additional resources all in one place.">Other Resources</option>
+        <option value="The resources in this section will be particularly useful to those leading professional learning on computational thinking and digital technologies. There are a range of staff learning activities which may be used separately as part of another meeting or sequenced in longer sessions to meet the needs of staff. They are presented in an order that might be useful for a longer professional learning session if required.">Leading Computational Thinking</option>
+      </select>
+    </div>
+    <div class="panel-footer">
+      <p><strong>Inside this section:</strong></p>
+      <div id="output"> </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $( document ).ready(function() {
+        $( "#output" ).text(  $( "#input" ).val() );
+    });
+
+    $( "#input" ).change(function() {
+        $( "#output" ).text(  $( "#input" ).val() );
+    });
+  </script>
+  </div>
+</body>
